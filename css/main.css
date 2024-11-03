@@ -1,0 +1,79 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Full-screen background image */
+body {
+    background-image: url('../images/background.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay container */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Styling for the heading */
+.overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Styling for the paragraph */
+.overlay p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Search input styling */
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Search button styling */
+.search-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #ff4a4a;
+}
