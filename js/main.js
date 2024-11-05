@@ -1,6 +1,6 @@
 function searchCity() {
-    const city = document.getElementById("citySearch").value.trim().toLowerCase();
+    const city = document.getElementById("cityInput").value.trim();
     if (city) {
-        window.location.href = `city.html?city=${encodeURIComponent(city)}`;
+        window.location.href = `city.html?city=${city}`;
     }
 }
